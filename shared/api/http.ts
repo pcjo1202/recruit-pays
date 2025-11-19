@@ -7,7 +7,7 @@ export const http = {
     url: string,
     options?: RequestInit
   ): Promise<T | undefined> => {
-    const fullUrl = `${BASE_URL}/api/v1${url}`;
+    const fullUrl = `${BASE_URL}${url}`;
 
     const response = await fetch(fullUrl, {
       method: "GET",
