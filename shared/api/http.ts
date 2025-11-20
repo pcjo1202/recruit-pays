@@ -3,10 +3,7 @@ import { env } from "../config/env";
 const BASE_URL = env.NEXT_PUBLIC_API_BASE_URL;
 
 export const http = {
-  get: async <T>(
-    url: string,
-    options?: RequestInit
-  ): Promise<T | undefined> => {
+  get: async <T>(url: string, options?: RequestInit): Promise<T> => {
     const fullUrl = `${BASE_URL}${url}`;
 
     const response = await fetch(fullUrl, {

@@ -3,6 +3,6 @@ import { MerchantsDetails } from "../model";
 
 export const getMerchantsByMchtCode = async (
   mchtCode: string
-): Promise<MerchantsDetails | undefined> => {
+): Promise<MerchantsDetails> => {
   return http.get<MerchantsDetails>(`/merchants/details/${mchtCode}`);
 };
