@@ -3,5 +3,9 @@ interface SideBarContainerProps {
 }
 
 export default function SideBarContainer({ children }: SideBarContainerProps) {
-  return <div className="px-4 flex flex-col h-full w-full">{children}</div>;
+  return (
+    <div className="basis-1/5 px-4 flex flex-col h-full bg-neutral-100">
+      {children}
+    </div>
+  );
 }
