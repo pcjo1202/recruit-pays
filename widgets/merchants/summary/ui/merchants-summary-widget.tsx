@@ -13,7 +13,7 @@ export default function MerchantsSummaryWidget({
 }: MerchantsSummaryWidgetProps) {
   const { totalCount, activeCount } = merchantsStats;
   return (
-    <div className="basis-1/2 flex gap-4 w-full">
+    <div className="flex gap-4 w-full">
       <SummaryCard
         title="전체 가맹점 수"
         value={totalCount.toLocaleString()}

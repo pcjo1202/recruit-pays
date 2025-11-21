@@ -18,7 +18,7 @@ export default function PaymentsSummaryWidget({
   const formattedTotalCount = totalCount.toLocaleString();
 
   return (
-    <div className="basis-1/2 flex gap-4 w-full">
+    <div className="flex gap-4 w-full">
       <SummaryCard
         title="총 거래액"
         value={`₩ ${formattedTotalAmount}`}
