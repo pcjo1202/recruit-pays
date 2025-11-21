@@ -1,9 +1,5 @@
 import type { Payments } from "@/entities/payments/model";
-
-const EXCHANGE_RATE = {
-  USD: 1100,
-  KRW: 1470
-};
+import { EXCHANGE_RATE } from "@/features/payments/constants/exchange-rate";
 
 // 결제 데이터 통계 계산 (총 거래액, 총 거래 건수, 결제 상태별 분포)
 export const calculatePaymentsStats = (payments: Payments[]) => {
