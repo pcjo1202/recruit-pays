@@ -1,7 +1,7 @@
 import useDashboardData from "@/features/dashbaord/model/use-dashboard-data";
+import MerchantsSummaryWidget from "@/widgets/merchants/summary/ui/merchants-summary-widget";
+import PaymentsSummaryWidget from "@/widgets/payments/summary/ui/payments-summary-widget";
 import { use } from "react";
-import MerchantsSummaryWidget from "./merchants-summary-widget";
-import PaymentsSummaryWidget from "./payments-summary-widget";
 
 export default function DashboardSummaryWidget() {
   const { payments, merchants } = use(useDashboardData());
