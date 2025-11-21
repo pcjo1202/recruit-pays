@@ -11,6 +11,7 @@ export const http = {
       headers: {
         "Content-Type": "application/json"
       },
+      cache: "force-cache",
       ...options
     });
 
