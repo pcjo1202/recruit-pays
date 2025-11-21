@@ -42,6 +42,8 @@ npm run dev
 - 시각적인 직관성을 위해, 대시보드 형태의 카드 디자인
 - 데이터 시각화를 위해 chart.js 사용
 - 일관성있는 UI를 위해 Shadcn UI 사용
+- 디자인 초안은 Figma Make 사용하여 생성
+- 디자인 theme는 https://tweakcn.com 사이트를 참고하여 생성
 
 ## 프로젝트 구조
 > FSD (Feature-Sliced Design) 방식으로 구현
